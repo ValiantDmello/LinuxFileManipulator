@@ -1,19 +1,15 @@
-# File System Manipulation Tool
+# File Copy and Move Utility
 
-A simple Linux command-line tool for copying or moving files and directories based on specified extensions.
+This C program provides a file and directory copy/move utility with support for filtering by file extensions. The program uses the nftw (File Tree Walk) function to traverse the source directory and perform copy or move operations on files and directories based on specified criteria.
 
 ## Features
 
-- **Copy (`-cp`):** Copies files and directories from a source directory to a destination directory.
-- **Move (`-mv`):** Moves files and directories from a source directory to a destination directory.
-- **Filter by Extension:** Optionally filter files based on specified extensions.
+* Copy or move files and directories from a source directory to a destination directory.
+* Filter files based on allowed file extensions.
+* Supports both single file and directory copy/move operations.
+* Utilizes the nftw function for efficient directory traversal.
 
 ## Usage
-
-### Prerequisites
-
-- Linux environment
-- GCC compiler
 
 ### Build
 
